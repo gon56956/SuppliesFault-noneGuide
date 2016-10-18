@@ -1,0 +1,103 @@
+<!-- 设备管理-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="注册"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp" >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_logo"/>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical|right"
+                android:textSize="18sp"
+                android:text="工号："/>
+            <EditText
+                android:id="@+id/staffNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:numeric="integer"
+                android:maxLength="6"
+                android:hint="输入工号" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical|right"
+                android:textSize="18sp"
+                android:text="姓名："/>
+            <EditText
+                android:id="@+id/staffName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:hint="输入姓名" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_login"
+            android:text="注册" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/setNetWork"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:text="设置"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

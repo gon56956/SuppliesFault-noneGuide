@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.1.0_ed94b6f2ea0f49b6052ddb2d0ad35e5f2263e283.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="59d9e42822a5df9f4e77713acb352d726b439d71">
+        <dex dex="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_f5040586fd21deea599540e03f81f3b6974eab60.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.3.0_300cd477c95e3ab3f6058cf61402628349fc3a1e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b112c195f47bc0248046e6549daac5e0fbebdf30">
+        <dex dex="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/pre-dexed/debug/instant-run_f50a033532a05b3941de73d626d018c436285e0f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.3.0_03efe80d0d99a6a457477eb8233d7053d1524b1c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mayunpeng/android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/pre-dexed/debug/support-annotations-23.3.0_6196da33815af03b7615862ac94c1c5ffedfed48.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.3.0_96f24093359f38b211b1b23f65682bd736e979a5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/libs/ksoap2-android-assembly-2.4-jar-with-dependencies.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e8796346a9191a019e936210a2dc50662c57594b">
+        <dex dex="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/pre-dexed/debug/ksoap2-android-assembly-2.4-jar-with-dependencies_a4b5dbb1fb6818d8e2cf330a8054f470291e67fe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-8.1.0_8ac7f3df845b4159f0d708bcf62df1c06ca23f0b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.3.0_251e8af99c57f2e4d822911ae5251766b9158b6f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/libs/jdom.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9986f2db44c7d183a861e72d3003eea1fcfe7a99">
+        <dex dex="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/pre-dexed/debug/jdom_3f79e7b0f1bc540c80af3d6a895917305077606a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.3.0_1f1d1e50dd990caad3614e461c8f926403001e67.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/libs/core.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="42fd0eaeee98eb9e1c8cfbcef742a34b54522c4c">
+        <dex dex="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/pre-dexed/debug/core_e086e74a4945c5bdf2b544e3b62aa75318105d2e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/libs/internal_impl-23.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/pre-dexed/debug/internal_impl-23.3.0_7ff57b157cfad0bc1f03bd042ea1b017fc65e5b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="/Users/mayunpeng/AndroidStudioProjects/SuppliesFault-noneGuide/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.3.0_bfca3c48c196b229d039bf3dba29da1e123fdf94.jar" />
+    </item>
+
+</items>

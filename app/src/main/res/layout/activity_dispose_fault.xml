@@ -1,0 +1,197 @@
+<!-- 我的故障单@处理故障单 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="处理故障单"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+	    <TextView
+	        android:id="@+id/solutionFault"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+            android:textSize="18sp"
+	        android:paddingTop="@dimen/activity_paddingTop_10dp" />
+    </LinearLayout>
+    
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:stretchColumns="1" >
+
+        <TableRow
+            android:paddingTop="@dimen/activity_paddingTop_10dp" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="&#160;&#160;设备编号：" />
+            <TextView
+                android:id="@+id/equipmentID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+        
+        <TableRow
+            android:paddingTop="@dimen/activity_paddingTop_10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="&#160;&#160;故障时间：" />
+            <TextView
+                android:id="@+id/faultDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+        
+        <TableRow
+            android:paddingTop="@dimen/activity_paddingTop_10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="&#160;&#160;故障地点：" />
+            <TextView
+                android:id="@+id/faultAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:visibility="visible"
+            android:paddingTop="@dimen/activity_paddingTop_10dp" >
+            <TextView
+                android:layout_height="match_parent"
+                android:gravity="center|top"
+                android:text="&#160;&#160;故障类型：" />
+            <TextView
+                android:id="@+id/faultType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow
+            android:visibility="visible"
+            android:paddingTop="@dimen/activity_paddingTop_10dp" >
+            <TextView
+                android:layout_height="match_parent"
+                android:gravity="center|top"
+                android:text="&#160;&#160;故障描述：" />
+            <TextView
+                android:id="@+id/faultInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="@dimen/activity_paddingTop_10dp" >
+            <TextView
+                android:layout_height="match_parent"
+                android:gravity="center|top"
+                android:text="&#160;&#160;处理建议：" />
+            <TextView
+                android:id="@+id/handleSuggest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="5dp" >
+            <TextView
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center"
+                android:text="&#160;&#160;备&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;注：" />
+            <EditText
+                android:id="@+id/comments"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="7"
+                android:textSize="14sp"
+                android:gravity="left|top"
+                android:hint="输入处理方法" />
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="@dimen/activity_paddingTop_10dp" >
+            <CheckBox
+                android:id="@+id/useSparepart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:layout_weight="1"
+                android:text="消耗备件" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/sparepartInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:hint="无备件消耗"
+        android:layout_below="@+id/tilte"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_above="@+id/linearLayout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" >
+
+        <Button
+            android:id="@+id/repairOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/shape_button"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="1dp"
+            android:textSize="18dp"
+            android:text="修复" />
+        <Button
+            android:id="@+id/repairDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/shape_button"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="1dp"
+            android:textSize="18dp"
+            android:text="删除" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,181 @@
+<!-- 故障工单@新建故障单  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="新建故障单"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+	<TableLayout
+		android:id="@+id/tilte"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center">
+
+		<TableRow android:paddingTop="1dp">
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical|center"
+				android:text="&#160;&#160;设备编号：" />
+			<EditText
+				android:id="@+id/equipmentID"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center|left"
+				android:digits="1234567890-"
+				android:maxLength="10"
+				android:hint="输入设备编号" />
+            <Button
+                android:id="@+id/scanEquipmentID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:background="@drawable/shape_button"
+                android:text="扫一扫" />
+		</TableRow>
+
+		<TableRow>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical|center"
+				android:text="&#160;&#160;模块信息：" />
+			<TextView
+				android:id="@+id/equipmentInfo"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+                android:paddingTop="18dp"/>
+		</TableRow>
+
+		<TableRow>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+                android:gravity="center_vertical|center"
+				android:text="&#160;&#160;故障类型：" />
+			<!-- 定义一个故障类型下拉菜单-->
+			<Spinner
+				android:id="@+id/spin_sparepartType"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:textSize="14sp" />
+		</TableRow>
+
+		<TableRow
+			android:paddingTop="@dimen/activity_paddingTop_10dp" >
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+                android:gravity="center_vertical|center"
+				android:text="&#160;&#160;故障描述：" />
+			<!-- 定义一个故障描述下拉菜单-->
+			<Spinner
+				android:id="@+id/spin_sparepartInfo"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:maxLines="2"
+				android:textSize="14sp" />
+		</TableRow>
+
+		<TableRow
+			android:paddingTop="@dimen/activity_paddingTop_10dp" >
+			<TextView
+				android:layout_height="match_parent"
+                android:gravity="center_vertical|center"
+				android:text="&#160;&#160;处理建议：" />
+			<TextView
+				android:id="@+id/handleSuggest"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+                android:textSize="16sp" />
+		</TableRow>
+
+		<TableRow
+			android:paddingTop="5dp" >
+			<TextView
+				android:layout_height="match_parent"
+                android:gravity="center_vertical|center"
+				android:text="&#160;&#160;备&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;注：" />
+			<EditText
+				android:id="@+id/comments"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:maxLines="7"
+				android:textSize="16sp"
+				android:gravity="left|top"
+				android:hint="输入处理方法" />
+		</TableRow>
+
+        <TableRow>
+            <CheckBox
+                android:id="@+id/useSparepart"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="消耗备件" />
+		</TableRow>
+		<TextView
+			android:id="@+id/sparepartInfo"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="14sp"
+			android:hint="无备件消耗"
+			android:layout_below="@+id/tilte"
+			android:layout_alignParentStart="true"
+			android:layout_marginStart="40dp"
+			android:layout_above="@+id/linearLayout" />
+	</TableLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+		android:id="@+id/linearLayout"
+		android:layout_weight="1">
+
+		<Button
+			android:id="@+id/repairOk"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom"
+			android:layout_marginLeft="3dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/shape_button"
+			android:layout_weight="1"
+			android:textSize="18dp"
+			android:text="已修复" />
+		<Button
+			android:id="@+id/repairNg"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom"
+			android:layout_marginRight="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/shape_button"
+			android:layout_weight="1"
+			android:textSize="18dp"
+			android:text="未修复" />
+	</LinearLayout>
+
+</LinearLayout>

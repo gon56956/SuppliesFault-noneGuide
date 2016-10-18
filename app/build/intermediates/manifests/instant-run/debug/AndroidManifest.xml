@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zzmetro.suppliesfault"
+    android:versionCode="1"
+    android:versionName="1.1.2.3" >
+
+    <uses-sdk android:minSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name="com.android.tools.fd.runtime.BootstrapApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Login画面 -->
+        <activity
+            android:name="com.zzmetro.suppliesfault.activity.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 参数配置画面 -->
+        <activity
+            android:name="com.zzmetro.suppliesfault.activity.LoginAddressActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- menu画面 -->
+        <activity
+            android:name="com.zzmetro.suppliesfault.activity.MenuActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <!-- 故障工单 -->
+        <!-- 我的故障单 -->
+        <activity
+            android:name="com.zzmetro.suppliesfault.activity.MyFaultListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 我的故障单@处理故障单 -->
+        <activity
+            android:name="com.zzmetro.suppliesfault.activity.DisposeFaultActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 新建故障单 -->
+        <activity
+            android:name="com.zzmetro.suppliesfault.activity.CreateFaultListActivity"
+            android:label="@string/action_create_fault"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <!-- 我的故障单@处理故障单@维护记录 -->
+        <activity
+            android:name="com.zzmetro.suppliesfault.activity.MaintainListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zzmetro.suppliesfault.activity.MaintainFaultActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 选择物资备件 -->
+        <activity
+            android:name="com.zzmetro.suppliesfault.activity.UseSparepartActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 我的物资备件 -->
+        <activity
+            android:name="com.zzmetro.suppliesfault.activity.MySparepartActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 交接班管理 -->
+        <activity
+            android:name="com.zzmetro.suppliesfault.activity.StartOffWorkActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 参数同步 -->
+        <!-- 接班 -->
+        <activity
+            android:name="com.zzmetro.suppliesfault.activity.StartworkActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 交班 -->
+        <activity
+            android:name="com.zzmetro.suppliesfault.activity.OffworkActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 模块管理 -->
+        <activity
+            android:name="com.zzmetro.suppliesfault.activity.ModuleReplaceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 卸载 -->
+        <activity
+            android:name="com.zzmetro.suppliesfault.activity.ModuleUninstallActivity"
+            android:label="@string/action_uninstall"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <!-- 安装 -->
+        <activity
+            android:name="com.zzmetro.suppliesfault.activity.ModuleInstallActivity"
+            android:label="@string/action_install"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+
+        <!-- 设备管理 -->
+        <activity
+            android:name="com.zzmetro.suppliesfault.activity.LogoutActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 隐藏键盘 -->
+        <!-- 全屏 -->
+        <activity
+            android:name="com.zxing.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

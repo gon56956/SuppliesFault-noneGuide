@@ -1,0 +1,130 @@
+<!-- 模块更换@安装  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="新建故障单"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/tilte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TableRow
+            android:paddingTop="1dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center"
+                android:text="&#160;&#160;模块编号：" />
+            <EditText
+                android:id="@+id/moduleCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="16sp"
+                android:digits="1234567890-"
+                android:maxLength="10"
+                android:hint="输入模块编号" />
+            <Button
+                android:id="@+id/scanModuleCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:background="@drawable/shape_button"
+                android:text="扫一扫" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="match_parent"
+                android:gravity="center|top"
+                android:text="&#160;&#160;模块名称：" />
+            <TextView
+                android:id="@+id/moduleName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_span="2"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow android:paddingTop="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center"
+                android:text="&#160;&#160;设备编号：" />
+            <EditText
+                android:id="@+id/equipmentCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="16sp"
+                android:digits="1234567890-"
+                android:maxLength="10"
+                android:hint="输入设备编号" />
+            <Button
+                android:id="@+id/scanEquipmentCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:background="@drawable/shape_button"
+                android:text="扫一扫" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="match_parent"
+                android:gravity="center|top"
+                android:text="&#160;&#160;设备地址：" />
+            <TextView
+                android:id="@+id/equipmentAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_span="2"
+                android:textSize="16sp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="25dp">
+
+        <Button
+            android:id="@+id/install"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/shape_button"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="1dp"
+            android:textSize="18dp"
+            android:text="安装" />
+    </LinearLayout>
+
+</LinearLayout>

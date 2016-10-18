@@ -1,0 +1,34 @@
+<!-- 选择物资备件 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/faultInfo"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/totalNumber"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center"
+            android:layout_weight="2" />
+
+        <EditText
+            android:id="@+id/useNumber"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:numeric="integer"
+            android:maxLength="2"
+            android:gravity="center_vertical|right"
+            android:layout_weight="3" />
+    </LinearLayout>
+</LinearLayout>

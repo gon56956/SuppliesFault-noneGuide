@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="网络配置"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp" >
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical|right"
+                android:textSize="18sp"
+                android:text="&#160;&#160;&#160;&#160;IP："/>
+            <EditText
+                android:id="@+id/ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:digits="1234567890."
+                android:maxLength="15"
+                android:hint="输入IP地址" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical|right"
+                android:textSize="18sp"
+                android:text="端口："/>
+            <EditText
+                android:id="@+id/port"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:numeric="integer"
+                android:maxLength="5"
+                android:hint="输入端口号" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical|right"
+                android:textSize="18sp"
+                android:text="线路："/>
+            <EditText
+                android:id="@+id/lineCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:numeric="integer"
+                android:maxLength="1"
+                android:hint="输入线路" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/setNetWork"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_login"
+            android:text="确定" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="25dp">
+
+        <Button
+            android:id="@+id/usePublickNetWork"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_login"
+            android:text="使用公网IP" />
+
+        <Button
+            android:id="@+id/useProtectNetWork"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_login"
+            android:text="使用内网IP" />
+    </LinearLayout>
+
+</LinearLayout>

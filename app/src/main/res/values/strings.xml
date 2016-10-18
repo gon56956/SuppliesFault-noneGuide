@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">故障采集</string>
+    <string name="add_people">添加朋友</string>
+    <string name="converse">发起群聊</string>
+    <string name="action_scan">扫一扫</string>
+    <string name="action_settings">网络设置</string>
+    <string name="device_manage">注销</string>
+
+    <string name="action_install">安装</string>
+    <string name="action_uninstall">卸载</string>
+    <string name="action_create_fault">新建故障单</string>
+    <string name="solution_fault">\u3000\u3000处理故障单：</string>
+
+    <!-- filePath -->
+    <string name="staffInfoPath">/data/data/com.zzmetro.suppliesfault/shared_prefs/staffInfo.xml</string>
+    <string name="equipmentPath">/data/data/com.zzmetro.suppliesfault/shared_prefs/equipmentInfo.xml</string>
+    <string name="problemClassPath">/data/data/com.zzmetro.suppliesfault/shared_prefs/problemClassInfo.xml</string>
+    <string name="ticketPath">/data/data/com.zzmetro.suppliesfault/shared_prefs/ticketInfo.xml</string>
+    <string name="materialPath">/data/data/com.zzmetro.suppliesfault/shared_prefs/myMaterial.xml</string>
+    <string name="materialCountPath">/data/data/com.zzmetro.suppliesfault/shared_prefs/materialCount.xml</string>
+    <string name="uploadTroubleTicketsPath">/data/data/com.zzmetro.suppliesfault/shared_prefs/uploadTroubleTickets.xml</string>
+    <string name="modulePath">/data/data/com.zzmetro.suppliesfault/shared_prefs/module.xml</string>
+</resources>
